@@ -7,6 +7,6 @@ import retrofit2.http.Query;
 
 public interface OjasInterface {
 
-    @GET("/api/v1/search_by_date?tags=story&page=1")
+    @GET("/api/v1/search_by_date")
     Call<String> getMessageList(@Query("tags") String tags, @Query("page") int page);
 }

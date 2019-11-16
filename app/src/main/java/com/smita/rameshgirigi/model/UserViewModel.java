@@ -9,11 +9,12 @@ import com.google.gson.annotations.SerializedName;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.List;
 
 import retrofit2.Response;
 
-public class UserViewModel {
+public class UserViewModel implements Serializable {
     private static final String TAG = "UserViewModel";
 
     @SerializedName("title")
